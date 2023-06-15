@@ -1,0 +1,113 @@
+@import "variables";
+* {
+  font-family: Arial, sans-serif;
+}
+
+body {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("illustration-Video-Game-Art-deer-forest-trees-1898429-wallhere.com.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  main {
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 2em;
+
+
+    .box {
+      position: relative;
+      padding: 2em;
+
+
+      .heading {
+        padding: 1em;
+        font-size: 5em;
+        font-weight: bolder;
+        color: $text-color;
+      }
+
+
+      form {
+
+
+        .form__field {
+          color: $text-color;
+          display: flex;
+          flex-direction: column;
+          padding: 1em;
+          font-size: 2em;
+
+
+          .form__input {
+            border-radius: 1em;
+            padding: 0.5em;
+            border: none;
+          }
+
+
+          .label {
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+          }
+
+
+        }
+
+        .buttons {
+          display: flex;
+
+          .buttons__item {
+
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 2em;
+
+            .label {
+              color: $text-color;
+              font-size: 1.3rem;
+              padding-left: 0.5em;
+            }
+
+
+          }
+
+          .form__button {
+            border: none;
+            padding: 2em 10em 2em 10em;
+            border-radius: 3em;
+            position: relative;
+            left: 15.5em;
+            background-color: $button-color;
+            color: $text-button-color;
+            font-weight: bolder;
+
+          }
+
+
+        }
+
+      }
+
+    }
+
+
+  }
+
+
+}
+
+
+
+
+
+
