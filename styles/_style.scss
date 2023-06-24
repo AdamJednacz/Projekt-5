@@ -72,7 +72,9 @@ body {
             @include phone{
               font-size: 0.7em;
               padding-left: 0;
-              padding-right: 0;
+              padding-right:0;
+              margin-left: 1em;
+              margin-right: 1em;
               text-align: center;
             }
           }
