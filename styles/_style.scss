@@ -28,9 +28,9 @@ body {
     backdrop-filter: blur(5px);
     border-radius: 2em;
     @include phone{
-      height: 80vh;
+      height: auto;
       width: 80%;
-      margin-top: 9em;
+
     }
 
 
@@ -46,13 +46,14 @@ body {
         color: $text-color;
         @include phone{
           padding: 0;
-          font-size: 4em;
+          font-size: 3em;
           text-align: center;
 
         }
       }
 
       form {
+        position: relative;
         .form__field {
           color: $text-color;
           display: flex;
@@ -61,14 +62,21 @@ body {
           font-size: 2em;
           @include phone{
             align-items: center;
-            justify-content: center;
+            justify-content: center
           }
 
           .form__input {
             border-radius: 1em;
             padding: 0.5em;
             border: none;
+            @include phone{
+              font-size: 0.7em;
+              padding-left: 0;
+              padding-right: 0;
+              text-align: center;
+            }
           }
+
           .label {
             padding-bottom: 0.5em;
             padding-left: 0.5em;
@@ -76,6 +84,10 @@ body {
         }
         .buttons {
           display: flex;
+          position: relative;
+
+
+
 
           .buttons__item {
 
@@ -83,11 +95,18 @@ body {
             align-items: center;
             position: relative;
             left: 2em;
+            @include phone{
+              left: -1em;
+            }
 
             .label {
               color: $text-color;
               font-size: 1.3rem;
               padding-left: 0.5em;
+              @include phone{
+                font-size: 1.2rem;
+
+              }
             }
           }
           .form__button {
@@ -100,8 +119,10 @@ body {
             color: $text-button-color;
             font-weight: bolder;
             @include phone{
-              padding: 2em 3em 2em 3em;
-              left: 8em;
+              padding: 1em 3em 1em 3em;
+              left: 1em;
+
+
             }
           }
         }
@@ -119,7 +140,9 @@ body {
     border-radius: 1em;
     margin: 1em;
     @include phone{
-      margin-bottom:2em ;
+      padding: 0.3em;
+      font-size: 4em;
+      margin-top: 0.5em;
     }
   }
   .icontainer{
@@ -129,6 +152,7 @@ body {
     flex-direction: column;
     @include phone{
       flex-direction: row;
+
 
     }
   }
